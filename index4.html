@@ -1,66 +1,135 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>project1</title>
+        <title>project</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <table border="1" style="width:200px;"style="height:100px;">
-            <caption>student Info</caption>
-            <thead>
-                <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Profile</th>
-            <th>Image</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>ahmed</td>
-                    <td>
-                        <a href="https://www.Ahmed.com"/> Ahmed</a>
-                    </td>
-                    <td>
-                        <img src="download (1).jpg"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>ali</td>
-                    <td>
-                        <a href="https://www.ali.com"/> ali</a>
-                    </td>
-                    <td>
-                        <img src="images.jpg"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>muhammed</td>
-                    <td>
-                        <a href="https://www.muhammed.com"/> muhammed</a>
-                    </td>
-                    <td>
-                        <img src="7297_5f8e5e4fb5dbe-1603165775.jpg"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="1">total</td>
-                    <td colspan="3">3</td>
-                </tr>
-            </tbody>
-        </table>
-        <style>
-            img{
-                width: 50px;
-                height: 60px;
-                direction: ltr;
-                margin-left: 50px; 
-                margin-right: 50px;
-             }
+    <header>
+        <div clas ="continer">
+            <h1 class="section"style="font: size 10px;">this is new page</h1>
+            <ul class="sconder-section">
+                <li><a href="#">home</a></li>
+                <li><a href="#">logo</a></li>
+            </ul>
+            <li><input type="text"placeholder="search"class="serchbar"></li>
+        </div>
+        <div class="navigation">
+        <vav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">login</a></li>
+            </ul>
+        </vav>
+        </div>
+    </header>
+    <nav class="sidbar">
+        <p>sidbar</p>
+    </nav>
+    <main>
+        <section class ="section-fo">
+            <h2>Florence Nightingale ( pioneer of nursing )</h2>
+            <p>Florence nightingale was born in 1820 int wealthy family in Italy , but she grow up and went to school in England .
+                When she was 17 , she decided that she wanted to be a nurse , although her family did not that this was a suitable job for their young daughter . However , Florence work in London was so effective that the British government asked her to be in charge of the nursing of wounded soldiers abroad .
+                after working in Europe , she returned to England and opened the nightingale school of nursing in London , the first school of this kind .</p>
+        </section>
+        <hr>
+        <section class="rhf">
+            <h2>Queen Victoria ( Empress of India )</h2>
+            <p>Queen Victoria was born in 24 may 1819 . She was the queen of the united kingdom of great Britain and Ireland from 1837 till her death for 36 year .
+                On may 1876 , she adopted the additional title of empress of India .
+                The Victorian age was a period of industrial , scientific , political and military progress within the kingdom .
+                Her era was a great expansion of the British empire , she died at the age of 81.</p>
+        </section>
+        <hr>
+        <section class="sent">
+            <h2>Amy Johnson ( the queen of the air )</h2>
+            <p>Amy Johnson was from the north of England and first interested in flying while she was working as secretary in London .
+                In 1929 , she was awarded her pilot's licence and a year later tried to break the record for a solo flight from Britain to Australia .
+                she became very popular with the British people who called her the queen of the air .
+                She also flew planes for the British army during the second world war , and was killed in a plane crash in 1941.</p>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>copyright 2022&#169;</p>
+    </footer>
+    <style>
+        * { 
+             font-size: 11px; 
+             margin: 0px; 
+             padding: 0px; 
+         } 
+         header { 
+             display: grid; 
+             grid-template-rows: 2fr 1fr; 
+             background-color: rgb(65, 145, 230); 
+         } 
+         main { 
+             background-color: rgb(235, 239, 249); 
+             margin-left: 5rem; 
+             padding: 1rem; 
+         } 
+         .continer{
+            display: flex; 
+             justify-content: space-between; 
+             align-items: center; 
+             background-color: rgb(13, 225, 179);
+         }
+          .logo{
+            margin: 10px 25px; 
+             display: inline-block; 
+          }
+          .serchbar { 
+             margin: 10px 25px; 
+             background-color: rgb(225, 229, 233); 
+             border: none; 
+             border-radius: 5px; 
+  
+         } 
+  
+         li, a { 
+             display: inline-block; 
+             margin-left: 10px; 
+             text-decoration: none; 
+             color:rgb(15, 14, 14) 
+         } 
+         .logo { 
+             display: inline-block; 
+             color:rgb(240, 240, 9); 
+             margin: 10px 25px; 
+         } 
+         
+         .navigation { 
+             margin-left: 5px;            
+         } 
+         .section-fo p{
+            font-size: 20px;
+            margin: 20px;
+         }
+         .rhf p{
+            font-size: 20px;
+            margin: 20px;
+         }
+         .sent p{
+            font-size: 20px;
+            margin: 20px;
+         }
+         .section-fo h2{
+            font-size: 15px;
 
-        </style>
+         }
+         .rhf h2{
+            font-size: 15px;
+            padding-top:10px ;
+         }
+         .sent h2{
+            font-size:15px;
+            padding-top:10px;
+         }
+    </style>
     </body>
 </html>
